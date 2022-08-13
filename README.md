@@ -5,6 +5,7 @@
 </p>
 
 Runge-Kutta 4 weighing used.
+
 $$
      y_{k+1} = y_k + \frac{\Delta t}{6} \left( f_1 + 2f_2 + 2f_3 + f_4  \right)
 $$
