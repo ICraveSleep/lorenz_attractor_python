@@ -59,7 +59,7 @@ def RK4_step(dt, tk, yk: []):
 if __name__ == '__main__':
     state = [-8, 8, 27]  # x, y, z
     dt_euler = 0.00001
-    dt_rk4 = 0.02
+    dt_rk4 = 0.01
     t = 4
     rk4_timer = create_time_span(0, t, dt_rk4)
     euler_timer = create_time_span(0, t, dt_euler)
@@ -99,6 +99,11 @@ if __name__ == '__main__':
         ylinee.append(measurement[1])
         zlinee.append(measurement[2])
 
-    ax.plot3D(xline, yline, zline, 'gray')
-    ax.plot3D(xlinee, ylinee, zlinee, 'red')
+    ax.plot3D(xlinee, ylinee, zlinee, 'red', label="Semi-Implicit Euler")
+    ax.plot3D(xline, yline, zline, 'gray', label="RK4")
+
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+    plt.legend(loc="upper right")
     plt.show()
