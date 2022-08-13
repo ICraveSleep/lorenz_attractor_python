@@ -4,6 +4,23 @@
     <img src="misc/figures/lorenz_attractor_image.PNG"/>
 </p>
 
+Runge-Kutta 4 weighing used.
 $$
-  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+     y_{k+1} = y_k + \frac{\Delta t}{6} \left( f_1 + 2f_2 + 2f_3 + f_4  \right) + \mathcal{O}(\Delta t^5), ~~ \text{Global: } \mathcal{O}(\Delta t^4)
+$$
+
+$$
+    f_1 = \Dot y(t) = f(t_k, y_k)
+$$
+
+$$
+    f_2 = f\left(t_k + \frac{\Delta t}{2}, y_k + \frac{\Delta t}{2} f_1\right)
+$$
+
+$$
+    f_3 = f\left((t_k + \frac{\Delta t}{2}, y_k + \frac{\Delta t}{2} f_2\right)
+$$
+
+$$
+    f_2 = f(t_k + \Delta t, y_k + \Delta t f_3)
 $$
