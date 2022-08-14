@@ -4,17 +4,20 @@ Lorenz Equations
 $$
     \dot x = \sigma (y-x)
 $$
+
 $$
     \dot y = x(\rho - z) -y
 $$
+
 $$
     \dot z = xy - \beta z
 $$
+
 For the Lorenz attractor with the butterfly wing shape:
+
 $$
     \sigma = 10, ~~ \beta = \frac{8}{3}, ~~ \rho = 28
 $$
-
 
 <p align="center">
     <img src="misc/figures/lorenz_attractor_image.PNG"/>
