@@ -1,5 +1,5 @@
 # Lorenz Attractor
-Lorenz Equations
+Lorenz's set of equations
 
 $$
     \dot x = \sigma (y-x)
