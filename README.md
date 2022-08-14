@@ -19,8 +19,8 @@ $$
     \sigma = 10, ~~ \beta = \frac{8}{3}, ~~ \rho = 28
 $$
 
-The figure below shows the difference between utilizing Semi-Implicit Forward Euler versus Runge-Kutta4
-integration scheme, with the following initial conditions given below, given the start time t=0
+The figure below shows the difference between utilizing Semi-Implicit Forward Euler versus Runge-Kutta 4
+integration scheme. The following initial conditions were applied, given the start time t=0
 
 $$
     x_0 = -8, ~~ y_0 = 8, ~~ z_0 = 27
@@ -31,7 +31,7 @@ $$
 </p>
 
 The Runge-Kutta 4 integration was run with a step time of dt=0.01. In order to achieve a similar solution with the Euler integration,
-its step time has to be reduced to the significantly smaller step time of dt = 0.00001. 
+its step time has to be reduced to the significantly smaller step time of dt=0.00001. 
 
 Below is the Runge-Kutta 4 weighing used.
 
